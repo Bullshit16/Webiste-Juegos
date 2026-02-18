@@ -1,4 +1,7 @@
-Modern Gaming Website
+<a href="https://youtu.be/ukMPKm3cLns?si=4My0MgQvuzVTkHGN" target="_blank">
+  <img src="./img/thumbnail.png" alt="Thumbnail"/>
+</a>
+
 ## 🚀 Introducción
 
 Bienvenido a **GameZone**, una tienda en línea de videojuegos pensada para los gamers que buscan rapidez, seguridad y una experiencia moderna.  
