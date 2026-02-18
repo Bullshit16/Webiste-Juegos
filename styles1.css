@@ -1,0 +1,414 @@
+:root {
+  --bg-main: #0f1217;
+  --bg-secondary: #151922;
+  --neon-primary: #edff66;
+  --accent-blue: #38bdf8;
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bg-main);
+    color: var(--text-main);
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15,18,23,0.85);
+    backdrop-filter: blur(10px);
+    padding: 15px 40px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: var(--neon-primary);
+}
+
+.cart-btn {
+    background: var(--neon-primary);
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    background: rgba(15,18,23,0.7);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* PRODUCTOS */
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: var(--bg-secondary);
+    width: 220px;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--accent-blue);
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    color: var(--text-muted);
+}
+
+.card button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px;
+    background: var(--neon-primary);
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* CARRITO */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100%;
+    background: var(--bg-secondary);
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart ul {
+    list-style: none;
+}
+
+.cart li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.remove-btn {
+    background: crimson;
+    border: none;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pay-btn {
+    background: var(--neon-primary);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* PAGO */
+.payment {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    z-index: 3000;
+}
+
+.payment-box {
+    background: var(--bg-main);
+    padding: 25px;
+    border-radius: 15px;
+    width: 320px;
+}
+
+.payment-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: var(--bg-secondary);
+    border: 1px solid gray;
+    color: white;
+}
+
+.cancel {
+    background: crimson !important;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background: #151922;
+    color: white;
+    outline: none;
+}
+
+.filters input::placeholder {
+    color: #9ca3af;
+}
+.tags {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+
+
+
+/* FACTURA */
+.invoice-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.invoice-box {
+  background: var(--bg-main);
+  padding: 25px;
+  border-radius: 15px;
+  width: 360px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.invoice-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.invoice-box p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.invoice-box ul {
+  margin: 10px 0;
+  padding-left: 15px;
+}
+
+.invoice-box li {
+  font-size: 14px;
+}
+
+.invoice-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.invoice-actions button {
+  flex: 1;
+}
+.platform {
+    font-size: 13px;
+    color: #38bdf8;
+    margin-top: 5px;
+}
+.emulator-notice {
+    display: none;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.emulator-box {
+    background: linear-gradient(145deg, #111, #1c1c1c);
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.emulator-box h3 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.emulator-box select {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.emulator-box button {
+    background: #00b894;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.emulator-box button:hover {
+    background: #00a383;
+    transform: scale(1.05);
+}
+.download-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.download-box {
+    background: #111;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.download-box h2 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.download-box button {
+    background: #00b894;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.download-box button:hover {
+    background: #00a383;
+}
+
+
+
+.footer {
+    background: linear-gradient(90deg, #111, #1a1a1a);
+    color: #aaa;
+    padding: 30px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}
+
+.footer strong {
+    color: var(--neon-primary);
+}
+
+.payment-box {
+    background: #111827;
+    padding: 30px;
+    border-radius: 20px;
+    width: 360px;
+    box-shadow: 0 0 40px rgba(56,189,248,0.2);
+}
+
+
+
+/* 🔥 JERARQUÍA CORRECTA DE CAPAS */
+
+.cart {
+    z-index: 1000;
+}
+
+.payment {
+    z-index: 3000;
+}
+
+.invoice-modal {
+    z-index: 4000;
+}
+
+.download-modal {
+    z-index: 5000;
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone Store</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+
+<!-- MODAL FACTURA -->
+<div class="invoice-modal" id="invoiceModal">
+  <div class="invoice-box">
+    <h2>🧾 Factura de compra</h2>
+
+    <div id="invoiceContent"></div>
+
+    <div class="invoice-actions">
+      <button onclick="downloadPDF()">📄 Imprimir</button>
+      <button class="cancel" onclick="closeInvoice()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+<body>
+
+<!-- HEADER CON MENÚ -->
+<header class="header">
+    <div class="logo">
+        <h1>🎮 GameZone</h1>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="nav">
+    <ul class="nav-links">
+    <li><a href="index.html"></a></li>
+    <li><a href="juegos.html"></a></li>
+    <li><a href="contacto.html"></a></li>
+
+        </ul>
+    </nav>
+
+    <!-- Botón carrito -->
+    <button class="cart-btn" onclick="toggleCart()">
+        🛒 Carrito (<span id="cart-count">0</span>)
+    </button>
+
+    <!-- Botón menú móvil -->
+   
+</header>
+</header>
+
+<!-- BANNER -->
+<section class="banner">
+    <video autoplay loop muted class="banner-video" 
+    src="images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+    <div class="banner-text">
+          <div class="header-card"></div>
+          <h1>Compra tu <span>juego</span> <br> favorito aquí</h1>
+
+        <p>Videojuegos que te llevan a otro nivel
+        Compra fácil, rápido y seguro</p>
+    </div>
+</section>
+
+<section class="filters">
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="🔍 Buscar juego..."
+        onkeyup="filterGames()"
+    >
+
+    <select id="categoryFilter" onchange="filterGames()">
+        <option value="all">Todas las categorías</option>
+        <option value="guerra">Guerra</option>
+        <option value="deporte">Deporte</option>
+        <option value="terror">Terror</option>
+        <option value="accion">Acción</option>
+        <option value="aventura">Aventura</option>
+    </select>
+
+    <select id="priceFilter" onchange="filterGames()">
+        <option value="all">Todos los precios</option>
+        <option value="low">Menos de $19</option>
+        <option value="mid">$20 - $39</option>
+        <option value="high">Más de $40</option>
+    </select>
+</section>
+
+
+<!-- PRODUCTOS -->
+<section class="products">
+    <h2>Catálogo</h2>
+
+        <div class="cards" id="gamesContainer"></div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CARRITO -->
+<div class="cart" id="cart">
+    <h2>🛒 Carrito</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: $<span id="total">0</span></h3>
+    <button class="pay-btn" onclick="openPayment()">Pagar ahora</button>
+    
+</div>
+
+
+<div class="payment" id="payment">
+    <div class="payment-box">
+        <div class="checkout">
+    <h2>Pago</h2>
+    <p class="secure">Todas las transacciones son seguras y están encriptadas.</p>
+    <div id="paymentMessage" style="margin-top: 10px; color: green; white-space: pre-wrap;"></div>
+
+
+    <div class="card-box">
+        <div class="card-header">
+                  <span>Tarjeta de crédito</span>
+            <div class="logos">
+                <img src="https://img.icons8.com/color/48/visa.png"/>
+                <img src="https://img.icons8.com/color/48/mastercard.png"/>
+                <img src="https://img.icons8.com/color/48/amex.png"/>
+            </div>
+        </div>
+
+      <input type="text" id="cardNumber" placeholder="Número de tarjeta">
+      <div class="row">
+      <input type="text" id="cardDate" placeholder="MM / AA">
+      <input type="text" id="cardCVV" placeholder="CVV">
+</div>
+<input type="text" id="cardName" placeholder="Nombre del titular">
+
+    </div>
+
+        <button onclick="processPayment()">Confirmar pago</button>
+        <button class="cancel" onclick="closePayment()">Cancelar</button>
+    </div>
+</div>
+
+<footer>
+  <div style="text-align: center; padding: 20px; background-color: #222; color: #fff;">
+    <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+    <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+    <p>Gerente : gamezone@ejemplo.com</p>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

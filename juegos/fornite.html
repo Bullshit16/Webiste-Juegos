@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fornite | GameZone</title>
+  <link rel="stylesheet" href="juegos.css">
+  <link rel="stylesheet" href="../styles1.css">
+</head>
+<body>
+
+<!-- HEADER IGUAL A INDEX1 -->
+<header class="header">
+  <div class="logo">
+    <h1>🎮 GameZone</h1>
+  </div>
+  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+</header>
+
+
+<!-- BANNER -->
+<section class="banner">
+    <video autoplay loop muted class="banner-video" 
+    src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+</section>
+
+<!-- DETALLE DEL JUEGO -->
+<section class="game-detail">
+
+  <img src="../images/g4.jpg" class="game-img" alt="Fornite">
+
+  <div class="info">
+    <h2>Fornite</h2>
+
+    <div class="badges">
+      <span class="badge">Acción</span>
+      <span class="badge">Guerra</span>
+      <span class="badge">Multiplayer</span>
+    </div>
+
+    <p class="description">
+      Fortnite es un videojuego de acción y supervivencia donde 100 jugadores
+      compiten en un mapa dinámico. Construye estructuras, combate enemigos
+      y sobrevive hasta el final.
+    </p>
+
+    <ul class="features">
+      <li>✔ Multijugador online</li>
+      <li>✔ Construcción en tiempo real</li>
+      <li>✔ Eventos en vivo</li>
+      <li>✔ Actualizaciones constantes</li>
+    </ul>
+
+    <h3>$50</h3>
+
+    <button class="buy" onclick="addToCart('Fornite', 50)">
+      🛒 Agregar al carrito
+    </button>
+  </div>
+
+</section>
+
+<script src="juegos.js"></script>
+</body>
+</html>

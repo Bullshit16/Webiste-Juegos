@@ -1,0 +1,181 @@
+:root {
+  --bg-main: #0f1217;
+  --bg-secondary: #151922;
+  --neon-primary: #edff66;
+  --accent-blue: #38bdf8;
+  --text-main: #ffffff;
+  --text-muted: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+}
+
+/* ===== HEADER (IGUAL A INDEX1) ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15,18,23,0.85);
+  backdrop-filter: blur(10px);
+  padding: 15px 40px; /* MISMO padding que index1 */
+}
+
+.header h1 {
+  font-size: 22px; /* MISMO tamaño */
+  font-weight: bold;
+}
+
+/* Botón volver igual al carrito */
+.header button {
+  background: var(--neon-primary);
+  color: black;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.header button:hover {
+  opacity: 0.9;
+}
+
+/* ===== DETALLE DEL JUEGO ===== */
+.game-detail {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+}
+
+.game-img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.info {
+  max-width: 500px;
+}
+
+.info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.badges {
+  margin: 10px 0;
+}
+
+.badge {
+  background: var(--accent-blue);
+  color: black;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.description {
+  color: var(--text-muted);
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.features li {
+  margin-bottom: 5px;
+}
+
+.buy {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: var(--neon-primary);
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buy:hover {
+  opacity: 0.9;
+}
+
+
+
+/* ===== TABLETS ===== */
+@media (max-width: 900px) {
+  .game-detail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .game-img {
+    width: 280px;
+  }
+
+  .info {
+    max-width: 100%;
+  }
+}
+
+
+/* ===== CELULARES ===== */
+@media (max-width: 600px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .header button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .game-detail {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .game-img {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .info h2 {
+    font-size: 22px;
+  }
+
+  .buy {
+    font-size: 14px;
+  }
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+
+

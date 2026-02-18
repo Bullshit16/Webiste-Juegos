@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft | GameZone</title>
+  <link rel="stylesheet" href="juegos.css">
+  <link rel="stylesheet" href="../styles1.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <h1>🎮 GameZone</h1>
+  </div>
+  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+</header>
+
+<section class="banner">
+  <video autoplay loop muted class="banner-video" src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+</section>
+
+<section class="game-detail">
+  <img src="../images/mine.jpg" class="game-img" alt="Minecraft">
+
+  <div class="info">
+    <h2>Minecraft</h2>
+    <div class="badges">
+      <span class="badge">Aventura</span>
+      <span class="badge">Sandbox</span>
+      <span class="badge">Creatividad</span>
+    </div>
+
+    <p class="description">
+      Minecraft es un juego de construcción y supervivencia en un mundo
+      abierto donde puedes explorar, crear y modificar tu entorno a voluntad.
+    </p>
+
+    <ul class="features">
+      <li>✔ Construcción libre</li>
+      <li>✔ Modo supervivencia y creativo</li>
+      <li>✔ Multijugador online</li>
+      <li>✔ Mods y personalización</li>
+    </ul>
+
+    <h3>$30</h3>
+
+    <button class="buy" onclick="addToCart('Minecraft', 30)">
+      🛒 Agregar al carrito
+    </button>
+  </div>
+</section>
+
+<script src="juegos.js"></script>
+</body>
+</html>
