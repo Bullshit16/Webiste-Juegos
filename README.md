@@ -25,5 +25,4 @@ https://github.com/Bullshit16/Webiste-Juegos.git
 
 ----------------------------
 Guia de usuario por tutorial
-https://drive.google.com/file/d/1CvWNfXTebWLlH3eYZjpnhiQRD_c5x9UV/view?usp=sharing
-
+https://drive.google.com/file/d/1VWbaCN4muHqEMBWCHYyyTdFXa_mqyLr6/view?usp=sharing
