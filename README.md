@@ -6,13 +6,19 @@
 
 ---
 ## Introduction: 
-#### 🚀 Build a Modern Gaming Website with HTML , CSS and JS 🌟
+🎮 Modern Gaming Website
+Un proyecto inspirado en estándares de Awwwards, construido con HTML, CSS y JavaScript para lograr un diseño moderno, dinámico y responsivo.
+🚀 Características principales
+- Scroll animations y efectos parallax
+- Layout responsivo con CSS Grid y Flexbox
+- Estética dark theme con gradientes y efectos neon
+- Hover effects y transiciones suaves para mejor UX
+- Optimización con media queries y compatibilidad cross-browser
+- SEO básico para visibilidad en buscadores
 
-#### Unleash your creativity and build an Awwwards-Winning Gaming Website using just HTML, CSS, and JavaScript! This step-by-step tutorial will guide you through crafting a modern web design that captivates with scroll animations, parallax effects, and smooth scrolling. Master CSS Grid and Flexbox to create a responsive layout, while integrating stunning text gradients, hover effects, and neon aesthetics for that perfect dark theme. Learn how to optimize animation keyframes, add interactive elements, and implement CSS transitions for a seamless user experience (UX). With tips on media queries, cross-browser compatibility, and SEO optimization, you’ll craft a visually stunning, minimalist UI inspired by Awwwards standards. Whether you're showcasing a gaming portfolio or exploring creative coding, this tutorial is your gateway to modern web development success!
 
 
 ---
-## Watch the full tutorial on YouTub
-<a href="https://youtu.be/ukMPKm3cLns?si=4My0MgQvuzVTkHGN">
-  <img src="./img/youtube-ligo.png" alt="youtube"/>
-</a>
+🛠️ Instalación y uso
+- Clona el repositorio:
+https://github.com/Bullshit16/Webiste-Juegos.git
