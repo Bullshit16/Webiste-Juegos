@@ -4,61 +4,179 @@
   <meta charset="UTF-8">
   <title>Clash Royale | GameZone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 
 <body>
 
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-
-<!-- BANNER -->
-<section class="banner">
-    <video autoplay loop muted class="banner-video" 
-    src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🏆 Estrategia en Tiempo Real</h2>
+    <p>
+      Construye tu mazo perfecto, domina la arena
+      y enfréntate a jugadores de todo el mundo
+      en intensas batallas PvP.
+    </p>
+  </div>
 </section>
 
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/l3.jpg" class="hero-img" alt="Clash Royale">
 
-<section class="game-detail">
-
-  <img src="../images/l3.jpg" class="game-img" alt="Clash Royale">
-
-  <div class="info">
+  <div class="hero-info">
     <h2>Clash Royale</h2>
 
     <div class="badges">
-      <span class="badge">Acción</span>
       <span class="badge">Estrategia</span>
-      <span class="badge">Multiplayer</span>
+      <span class="badge">Cartas</span>
+      <span class="badge">PvP</span>
+      <span class="badge">Multijugador</span>
+      <span class="badge">Tiempo Real</span>
     </div>
 
-    <p class="description">
-      Clash Royale es un juego de estrategia en tiempo real donde
-      coleccionas cartas, construyes mazos y luchas contra jugadores
-      de todo el mundo en duelos épicos.
+    <p class="short-desc">
+      Clash Royale combina estrategia, cartas coleccionables
+      y defensa de torres en batallas rápidas y competitivas.
+      Cada decisión puede cambiar el rumbo del combate.
     </p>
 
-    <ul class="features">
-      <li>✔ Batallas PvP en tiempo real</li>
-      <li>✔ Cartas coleccionables</li>
-      <li>✔ Clanes y guerras de clanes</li>
-      <li>✔ Eventos y desafíos especiales</li>
-    </ul>
-
-    <h3>$40</h3>
+    <h3 class="price">$40</h3>
 
     <button class="buy" onclick="addToCart('Clash Royale', 40)">
-      🛒 Agregar al carrito
+      🛒 Comprar Ahora
     </button>
+  </div>
+</section>
+
+<!-- DESCRIPCIÓN EXTENDIDA -->
+<section class="info-grid">
+
+  <!-- JUGABILIDAD -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Sistema de Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Participa en batallas 1v1 o 2v2 donde deberás destruir
+        las torres enemigas usando cartas estratégicamente.
+      </p>
+      <p>
+        El manejo del elixir y la correcta combinación
+        de tropas es clave para ganar cada enfrentamiento.
+      </p>
+    </div>
+  </div>
+
+  <!-- CARTAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🃏 Cartas y Mazo
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Cartas comunes, especiales, épicas y legendarias</li>
+        <li>Más de 100 cartas disponibles</li>
+        <li>Construcción personalizada de mazos</li>
+        <li>Mejora de cartas con oro</li>
+        <li>Combinaciones estratégicas infinitas</li>
+      </ul>
+      <p>
+        Crear un mazo equilibrado entre ataque, defensa
+        y apoyo marcará la diferencia en la arena.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🏆 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Batallas PvP clasificatorias</li>
+        <li>Guerras de clanes</li>
+        <li>Desafíos especiales</li>
+        <li>Eventos temporales</li>
+        <li>Modo cooperativo 2v2</li>
+      </ul>
+      <p>
+        Compite en temporadas y asciende en ligas
+        para desbloquear mejores recompensas.
+      </p>
+    </div>
+  </div>
+
+  <!-- PROGRESIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📈 Progresión y Competencia
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema de trofeos y ligas</li>
+        <li>Recompensas diarias</li>
+        <li>Cofres especiales</li>
+        <li>Ranking global</li>
+        <li>Eventos competitivos oficiales</li>
+      </ul>
+      <p>
+        Mejora tu estrategia y alcanza las ligas
+        más altas para demostrar tu dominio.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONSEJOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🧠 Consejos Estratégicos
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>No gastes todo el elixir al inicio</li>
+        <li>Aprende a contrarrestar cartas populares</li>
+        <li>Construye mazos equilibrados</li>
+        <li>Observa repeticiones para mejorar</li>
+        <li>Coordínate en guerras de clanes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- REQUISITOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📱 Requisitos del Sistema
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Android / iOS compatible</li>
+        <li>2GB RAM mínimo</li>
+        <li>Conexión a Internet</li>
+        <li>Espacio mínimo 500MB</li>
+      </ul>
+      <p>
+        Optimizado para dispositivos móviles
+        con rendimiento estable.
+      </p>
+    </div>
   </div>
 
 </section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 
 <script src="juegos.js"></script>
 </body>

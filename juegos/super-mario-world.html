@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Mario World | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🗺 Aventura Clásica en Dinosaur Land</h2>
+    <p>
+      Súmate a Mario y Luigi mientras exploran Dinosaur Land,
+      enfrentan enemigos icónicos y rescatan a la princesa Peach
+      en esta aventura clásica de plataformas.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/super-mario-world.jpg" class="hero-img" alt="Super Mario World">
+  <div class="hero-info">
+    <h2>Super Mario World</h2>
+
+    <div class="badges">
+      <span class="badge">Aventura</span>
+      <span class="badge">Plataformas</span>
+      <span class="badge">Clásico</span>
+      <span class="badge">Nintendo</span>
+    </div>
+
+    <p class="short-desc">
+      Explora niveles variados, descubre secretos ocultos
+      y domina los desafíos de Dinosaur Land con Mario y Luigi.
+    </p>
+
+    <h3 class="price">$5</h3>
+
+    <button class="buy" onclick="addToCart('Super Mario World', 5)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Super Mario World combina plataformas clásicas con exploración,
+        secretos y un mundo lleno de color y diversión.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal en Dinosaur Land</li>
+        <li>Exploración de niveles secretos</li>
+        <li>Desafíos con Yoshi y power-ups</li>
+        <li>Recorrido libre para desbloquear todos los secretos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Jugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Saltos precisos y control ágil de Mario</li>
+        <li>Uso de power-ups clásicos</li>
+        <li>Interacción con Yoshi</li>
+        <li>Exploración de rutas alternativas</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Estilo visual clásico 16-bit</li>
+        <li>Banda sonora legendaria</li>
+        <li>Animaciones fluidas de personajes y enemigos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Historia principal: 8–12 horas</li>
+        <li>Desbloquear todos los niveles y secretos: +10 horas</li>
+        <li>Alta rejugabilidad por exploración y rutas ocultas</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Super Nintendo (SNES)</li>
+        <li>Consolas compatibles con emuladores</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

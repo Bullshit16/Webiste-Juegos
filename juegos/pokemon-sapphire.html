@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Sapphire | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🌊 Aventura en Hoenn</h2>
+    <p>
+      Pokémon Sapphire te sumerge en Hoenn enfrentando al Equipo Aqua,
+      capturando a Kyogre y explorando una región llena de secretos,
+      legendarios y desafíos estratégicos.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/pokemon-sapphire.jpg" class="hero-img" alt="Pokemon Sapphire">
+  <div class="hero-info">
+    <h2>Pokemon Sapphire</h2>
+
+    <div class="badges">
+      <span class="badge">RPG</span>
+      <span class="badge">Aventura</span>
+      <span class="badge">Hoenn</span>
+      <span class="badge">Legendario</span>
+    </div>
+
+    <p class="short-desc">
+      Explora Hoenn, enfrenta al Equipo Aqua y captura Pokémon legendarios
+      en esta clásica aventura con mejoras gráficas y mecánicas.
+    </p>
+
+    <h3 class="price">$4</h3>
+
+    <button class="buy" onclick="addToCart('Pokemon Sapphire', 4)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Pokémon Sapphire es un RPG de Hoenn donde los jugadores enfrentan
+        al Equipo Aqua, capturan legendarios y completan la región con
+        eventos especiales y misiones secundarias.
+      </p>
+      <p>
+        La historia combina aventura clásica con mecánicas mejoradas
+        y contenido adicional.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal por Hoenn</li>
+        <li>Captura de más de 200 Pokémon</li>
+        <li>Eventos y combates con Pokémon legendarios</li>
+        <li>Exploración de rutas y secretos</li>
+        <li>Intercambio y compatibilidad con otros juegos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema clásico por turnos</li>
+        <li>Combates dobles y estrategia de tipos</li>
+        <li>Eventos y entrenadores con IA mejorada</li>
+        <li>Mejoras en habilidades y crianza Pokémon</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sprites y entornos mejorados</li>
+        <li>Animaciones de ataques y efectos dinámicos</li>
+        <li>Música clásica de Hoenn con mejoras sonoras</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal: ~35-40 horas</li>
+        <li>Eventos opcionales y captura de legendarios: +15 horas</li>
+        <li>Exploración completa de Hoenn</li>
+      </ul>
+      <p>
+        🎯 Rejugabilidad alta gracias a legendarios,
+        desafíos opcionales y combates estratégicos.
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Game Boy Advance (GBA)</li>
+        <li>Emuladores compatibles: Windows, Mac, Android</li>
+      </ul>
+      <p>
+        Compatible con consolas originales y emuladores modernos.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

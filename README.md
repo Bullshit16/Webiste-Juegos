@@ -1,29 +1,18 @@
+
 <a href="https://youtu.be/ukMPKm3cLns?si=4My0MgQvuzVTkHGN" target="_blank">
   <img src="./img/thumbnail.png" alt="Thumbnail"/>
 </a>
 
-## 🚀 Introducción
 
-Bienvenido a **GameZone**, una tienda en línea de videojuegos pensada para los gamers que buscan rapidez, seguridad y una experiencia moderna.  
-Aquí podrás explorar un catálogo variado de títulos, filtrar por género o plataforma y añadir tus juegos favoritos al carrito de compras con total facilidad.  
+---
+## Introduction: 
+#### 🚀 Build a Modern Gaming Website with HTML , CSS and JS 🌟
 
-El objetivo de este proyecto es ofrecer una **experiencia de usuario atractiva y funcional**, con un diseño responsive y dinámico que refleja la pasión por los videojuegos.  
-GameZone es una **página web completa**, lista para mostrar cómo se puede construir una tienda digital con HTML, CSS y JavaScript.
+#### Unleash your creativity and build an Awwwards-Winning Gaming Website using just HTML, CSS, and JavaScript! This step-by-step tutorial will guide you through crafting a modern web design that captivates with scroll animations, parallax effects, and smooth scrolling. Master CSS Grid and Flexbox to create a responsive layout, while integrating stunning text gradients, hover effects, and neon aesthetics for that perfect dark theme. Learn how to optimize animation keyframes, add interactive elements, and implement CSS transitions for a seamless user experience (UX). With tips on media queries, cross-browser compatibility, and SEO optimization, you’ll craft a visually stunning, minimalist UI inspired by Awwwards standards. Whether you're showcasing a gaming portfolio or exploring creative coding, this tutorial is your gateway to modern web development success!
 
-✨ Características Principales
-Animaciones de Scroll: Efectos dinámicos mientras el usuario navega.
 
-Parallax Effects: Profundidad visual impactante.
-
-Layout Moderno: Uso avanzado de CSS Grid y Flexbox.
-
-Estética Gaming: Gradientes de texto, efectos hover y optimización para temas oscuros.
-
-Optimización SEO: Estructura pensada para motores de búsqueda.
-
-Totalmente Responsivo: Adaptado para móviles, tablets y escritorio.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Tecnología,Uso
-HTML5,Estructura semántica del sitio.
-CSS3,"Animaciones, Keyframes y Flexbox/Grid."
-JavaScript,Interactividad y lógica de scroll.
+---
+## Watch the full tutorial on YouTub
+<a href="https://youtu.be/ukMPKm3cLns?si=4My0MgQvuzVTkHGN">
+  <img src="./img/youtube-ligo.png" alt="youtube"/>
+</a>

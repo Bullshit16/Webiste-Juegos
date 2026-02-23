@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>WWE 2K11 | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🤼 Vive la Lucha Libre Profesional</h2>
+    <p>
+      WWE 2K11 trae a tus superestrellas favoritas con movimientos
+      auténticos, modos de juego profundos y la experiencia más
+      completa de wrestling en consola.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/wwe-2k11.jpg" class="hero-img" alt="WWE 2K11">
+  <div class="hero-info">
+    <h2>WWE 2K11</h2>
+
+    <div class="badges">
+      <span class="badge">Lucha</span>
+      <span class="badge">Deporte</span>
+      <span class="badge">Simulación</span>
+      <span class="badge">Multijugador</span>
+    </div>
+
+    <p class="short-desc">
+      Controla a tus luchadores favoritos de WWE y recrea combates
+      épicos, desde peleas individuales hasta eventos completos
+      como WrestleMania.
+    </p>
+
+    <h3 class="price">$6</h3>
+
+    <button class="buy" onclick="addToCart('WWE 2K11', 6)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        WWE 2K11 es un simulador de lucha libre que permite a los jugadores
+        controlar a sus superestrellas favoritas de la WWE, participar en combates
+        individuales o en equipo, recrear eventos icónicos y personalizar partidas
+        con reglas y estipulaciones variadas.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Modo Carrera: Lleva a tu luchador a la cima de WWE</li>
+        <li>Exhibición rápida: Combates individuales o por equipos</li>
+        <li>WWE Universe: Personaliza y gestiona historias y rivalidades</li>
+        <li>Eventos icónicos de WrestleMania y SmackDown</li>
+        <li>Multijugador local y en línea</li>
+      </ul>
+      <p>
+        Cada modo ofrece distintos objetivos, desde el control estratégico
+        de la historia hasta combates rápidos llenos de acción.
+      </p>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Jugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema de golpes, llaves y movimientos especiales</li>
+        <li>Secuencias de reversa y contraataques dinámicos</li>
+        <li>Combates en jaulas, rings y entornos variados</li>
+        <li>Uso de objetos y equipamiento en combate</li>
+        <li>Control preciso de superestrellas y movimientos especiales</li>
+      </ul>
+      <p>
+        La jugabilidad combina estrategia, reflejos y timing para recrear la acción
+        real de la lucha libre profesional.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎤 Presentación y Gráficos
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Modelos detallados de luchadores con animaciones realistas</li>
+        <li>Entradas y presentaciones auténticas de WWE</li>
+        <li>Comentaristas oficiales de WWE en los eventos</li>
+        <li>Efectos de luces y cámaras similares a transmisiones televisivas</li>
+      </ul>
+      <p>
+        WWE 2K11 ofrece una experiencia audiovisual completa, acercando al jugador
+        a la sensación de estar en un evento en vivo.
+      </p>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Modo Carrera: 20–30 horas</li>
+        <li>Universo WWE: Infinita rejugabilidad creando historias</li>
+        <li>Exhibición y multijugador: Combates rápidos ilimitados</li>
+      </ul>
+      <p>
+        Perfecto tanto para jugadores que buscan completar la carrera como para
+        quienes quieren experimentar combates sin fin.
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>PlayStation 3</li>
+        <li>Xbox 360</li>
+        <li>Wii</li>
+      </ul>
+      <p>
+        Compatible con consolas de su generación; cada versión mantiene la experiencia
+        auténtica de la WWE.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+</body>
+</html>

@@ -3,53 +3,155 @@
 <head>
   <meta charset="UTF-8">
   <title>Sonic | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-<section class="banner">
-  <video autoplay loop muted class="banner-video" src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>💨 Velocidad y Aventura</h2>
+    <p>
+      Sonic combina acción y plataformas rápidas. Corre, salta y recolecta
+      anillos mientras enfrentas enemigos y rescatas el mundo.
+    </p>
+  </div>
 </section>
 
-<section class="game-detail">
-  <img src="../images/sonic.jpg" class="game-img" alt="Sonic">
-
-  <div class="info">
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/sonic.jpg" class="hero-img" alt="Sonic">
+  <div class="hero-info">
     <h2>Sonic</h2>
+
     <div class="badges">
       <span class="badge">Acción</span>
       <span class="badge">Aventura</span>
       <span class="badge">Plataformas</span>
+      <span class="badge">Clásico</span>
     </div>
 
-    <p class="description">
-      Sonic es un juego de plataformas donde controlas al famoso erizo
-      azul corriendo a toda velocidad para salvar el mundo y recolectar anillos.
+    <p class="short-desc">
+      Controla al erizo azul más rápido del mundo,
+      recolecta anillos, derrota enemigos y completa niveles desafiantes.
     </p>
 
-    <ul class="features">
-      <li>✔ Plataformas rápidas</li>
-      <li>✔ Recolecta anillos</li>
-      <li>✔ Multijugador opcional</li>
-      <li>✔ Niveles variados</li>
-    </ul>
-
-    <h3>$20</h3>
+    <h3 class="price">$20</h3>
 
     <button class="buy" onclick="addToCart('Sonic', 20)">
-      🛒 Agregar al carrito
+      🛒 Comprar Ahora
     </button>
   </div>
 </section>
 
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Sonic es un juego de plataformas clásico que combina velocidad,
+        acción y niveles desafiantes, ideal para fanáticos de los juegos retro
+        y la acción arcade.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal</li>
+        <li>Desafíos de velocidad y niveles secretos</li>
+        <li>Multijugador opcional</li>
+        <li>Recolección de anillos y coleccionables</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Jugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Control rápido y preciso del personaje</li>
+        <li>Saltos, loops y obstáculos estratégicos</li>
+        <li>Velocidad progresiva en niveles avanzados</li>
+        <li>Recolecta anillos para protección y puntuación</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Gráficos coloridos y niveles detallados</li>
+        <li>Música energética y efectos de sonido arcade</li>
+        <li>Animaciones fluidas del erizo y enemigos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal: ~10-15 horas</li>
+        <li>Niveles secretos y coleccionables: +5 horas</li>
+        <li>Rejugabilidad con distintos modos y tiempos de velocidad</li>
+      </ul>
+      <p>
+        🎯 Ideal para jugadores que buscan acción rápida y desafíos arcade.
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Game Boy Advance</li>
+        <li>Consolas clásicas compatibles y emuladores</li>
+      </ul>
+      <p>
+        Compatible con consolas originales y emuladores modernos.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
 <script src="juegos.js"></script>
+
 </body>
 </html>

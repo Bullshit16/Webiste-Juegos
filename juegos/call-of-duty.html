@@ -3,53 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <title>Call of Duty | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-<section class="banner">
-  <video autoplay loop muted class="banner-video" src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🔥 Combate Intenso y Realista</h2>
+    <p>
+      Vive la experiencia definitiva en disparos en primera persona,
+      con campañas cinematográficas y multijugador competitivo.
+    </p>
+  </div>
 </section>
 
-<section class="game-detail">
-  <img src="../images/g1.jpg" class="game-img" alt="Call of Duty">
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/g1.jpg" class="hero-img" alt="Call of Duty">
 
-  <div class="info">
+  <div class="hero-info">
     <h2>Call of Duty</h2>
+
     <div class="badges">
-      <span class="badge">Guerra</span>
+      <span class="badge">Shooter</span>
       <span class="badge">Acción</span>
-      <span class="badge">Multiplayer</span>
+      <span class="badge">Guerra</span>
+      <span class="badge">FPS</span>
+      <span class="badge">Multijugador</span>
     </div>
 
-    <p class="description">
-      Call of Duty es un juego de disparos en primera persona donde
-      los jugadores participan en intensas batallas modernas y bélicas.
-      Disfruta de campañas épicas y modos multijugador.
+    <p class="short-desc">
+      Call of Duty ofrece combates intensos, campañas épicas
+      y modos multijugador competitivos donde la estrategia,
+      reflejos y trabajo en equipo son clave para la victoria.
     </p>
 
-    <ul class="features">
-      <li>✔ Campaña emocionante</li>
-      <li>✔ Multiplayer online</li>
-      <li>✔ Armas y equipamiento variados</li>
-      <li>✔ Actualizaciones constantes</li>
-    </ul>
-
-    <h3>$60</h3>
+    <h3 class="price">$60</h3>
 
     <button class="buy" onclick="addToCart('Call of Duty', 60)">
-      🛒 Agregar al carrito
+      🛒 Comprar Ahora
     </button>
   </div>
 </section>
+
+<!-- DESCRIPCIÓN EXTENDIDA -->
+<section class="info-grid">
+
+  <!-- CAMPAÑA -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎬 Modo Campaña
+    </div>
+    <div class="card-content">
+      <p>
+        Vive una historia cinematográfica llena de misiones
+        intensas alrededor del mundo. Participa en operaciones
+        especiales, infiltraciones tácticas y enfrentamientos
+        a gran escala.
+      </p>
+      <p>
+        Cada misión combina acción explosiva con momentos
+        estratégicos y narrativa envolvente.
+      </p>
+    </div>
+  </div>
+
+  <!-- MULTIJUGADOR -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🌍 Multijugador Competitivo
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Partidas online rápidas e intensas</li>
+        <li>Modos: Duelo por Equipos, Dominación, Buscar y Destruir</li>
+        <li>Sistema de rangos y prestigio</li>
+        <li>Personalización completa de clases</li>
+        <li>Eventos y temporadas especiales</li>
+      </ul>
+      <p>
+        Compite contra jugadores de todo el mundo y demuestra
+        tus habilidades tácticas.
+      </p>
+    </div>
+  </div>
+
+  <!-- ARMAMENTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🔫 Armas y Equipamiento
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Rifles de asalto y subfusiles</li>
+        <li>Francotiradores de largo alcance</li>
+        <li>Escopetas y pistolas tácticas</li>
+        <li>Granadas y equipo táctico</li>
+        <li>Rachas de bajas especiales</li>
+      </ul>
+      <p>
+        Desbloquea mejoras y accesorios para adaptar
+        tu estilo de combate.
+      </p>
+    </div>
+  </div>
+
+  <!-- JUGABILIDAD -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Sistema de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Motor gráfico realista</li>
+        <li>Sonido envolvente</li>
+        <li>IA avanzada</li>
+        <li>Movimiento táctico fluido</li>
+        <li>Progresión y recompensas</li>
+      </ul>
+      <p>
+        La combinación de realismo y acción rápida
+        convierte cada partida en una experiencia intensa.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONSEJOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🧠 Consejos para Mejorar
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aprende los mapas y puntos estratégicos</li>
+        <li>Configura tu sensibilidad ideal</li>
+        <li>Juega en equipo y usa comunicación</li>
+        <li>Adapta tu clase según el modo</li>
+        <li>Controla rachas de bajas inteligentemente</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- REQUISITOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Requisitos del Sistema
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>8GB RAM mínimo</li>
+        <li>Tarjeta gráfica dedicada moderna</li>
+        <li>80GB espacio libre</li>
+        <li>Windows 10 o superior</li>
+        <li>Conexión a Internet estable</li>
+      </ul>
+      <p>
+        Recomendado usar auriculares y mando
+        para una experiencia más inmersiva.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 
 <script src="juegos.js"></script>
 </body>

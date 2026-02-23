@@ -3,52 +3,180 @@
 <head>
   <meta charset="UTF-8">
   <title>Cyberpunk | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-<section class="banner">
-  <video autoplay loop muted class="banner-video" src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🌆 Bienvenido a Night City</h2>
+    <p>
+      Sumérgete en un mundo futurista dominado por
+      corporaciones, implantes cibernéticos y decisiones
+      que cambiarán tu destino.
+    </p>
+  </div>
 </section>
 
-<section class="game-detail">
-  <img src="../images/l8.jpg" class="game-img" alt="Cyberpunk">
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/l8.jpg" class="hero-img" alt="Cyberpunk">
 
-  <div class="info">
-    <h2>Cyberpunk</h2>
+  <div class="hero-info">
+    <h2>Cyberpunk 2077</h2>
+
     <div class="badges">
-      <span class="badge">Acción</span>
-      <span class="badge">Aventura</span>
       <span class="badge">RPG</span>
+      <span class="badge">Mundo Abierto</span>
+      <span class="badge">Acción</span>
+      <span class="badge">Futurista</span>
+      <span class="badge">Narrativo</span>
     </div>
 
-    <p class="description">
-      Cyberpunk 2077 es un RPG de mundo abierto ambientado en Night City,
-      donde tus decisiones afectan la historia y el entorno futurista.
+    <p class="short-desc">
+      Cyberpunk 2077 es un RPG de mundo abierto ambientado
+      en Night City, donde tus decisiones moldean la historia,
+      las relaciones y el desarrollo de tu personaje.
     </p>
 
-    <ul class="features">
-      <li>✔ Mundo abierto</li>
-      <li>✔ Personalización de personajes</li>
-      <li>✔ Misiones dinámicas</li>
-      <li>✔ Tecnología y combate avanzado</li>
-    </ul>
-
-    <h3>$10</h3>
+    <h3 class="price">$10</h3>
 
     <button class="buy" onclick="addToCart('Cyberpunk', 10)">
-      🛒 Agregar al carrito
+      🛒 Comprar Ahora
     </button>
   </div>
 </section>
+
+<!-- DESCRIPCIÓN EXTENDIDA -->
+<section class="info-grid">
+
+  <!-- HISTORIA -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Historia y Ambientación
+    </div>
+    <div class="card-content">
+      <p>
+        En Night City, una metrópolis obsesionada con el poder,
+        el glamour y las modificaciones corporales, tomarás el rol
+        de V, un mercenario en busca de un implante único que
+        promete la inmortalidad.
+      </p>
+      <p>
+        Las decisiones que tomes afectarán el desarrollo
+        de la historia y las relaciones con distintos personajes.
+      </p>
+    </div>
+  </div>
+
+  <!-- MUNDO ABIERTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🌍 Mundo Abierto
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Exploración libre en Night City</li>
+        <li>Distritos con estilos únicos</li>
+        <li>Eventos dinámicos</li>
+        <li>Misiones secundarias variadas</li>
+        <li>Interacción con NPCs detallada</li>
+      </ul>
+      <p>
+        Cada zona ofrece contratos, historias y secretos
+        que enriquecen la experiencia.
+      </p>
+    </div>
+  </div>
+
+  <!-- PERSONALIZACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🧬 Personalización y Progresión
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Creación completa de personaje</li>
+        <li>Árbol de habilidades profundo</li>
+        <li>Implantes cibernéticos mejorables</li>
+        <li>Armas personalizables</li>
+        <li>Estilos de combate variados</li>
+      </ul>
+      <p>
+        Puedes optar por sigilo, combate directo
+        o hackeo tecnológico avanzado.
+      </p>
+    </div>
+  </div>
+
+  <!-- COMBATE -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🔫 Sistema de Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Disparos en primera persona</li>
+        <li>Hackeo de enemigos</li>
+        <li>Combate cuerpo a cuerpo</li>
+        <li>Uso de implantes especiales</li>
+        <li>IA avanzada</li>
+      </ul>
+      <p>
+        Combina tecnología y estrategia para adaptarte
+        a cada misión.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONSEJOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🧠 Consejos para Sobrevivir
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Invierte puntos según tu estilo</li>
+        <li>Explora contratos secundarios</li>
+        <li>Mejora tus implantes regularmente</li>
+        <li>Equilibra sigilo y combate</li>
+        <li>Guarda antes de decisiones importantes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- REQUISITOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Requisitos del Sistema
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>8GB RAM mínimo</li>
+        <li>Tarjeta gráfica dedicada</li>
+        <li>70GB espacio libre</li>
+        <li>Windows 10 o superior</li>
+      </ul>
+      <p>
+        Recomendado SSD para mejor rendimiento
+        y tiempos de carga más rápidos.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 
 <script src="juegos.js"></script>
 </body>

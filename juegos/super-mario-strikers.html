@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Mario Strikers | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>⚽ Fútbol Extremo en el Reino Champiñón</h2>
+    <p>
+      Super Mario Strikers lleva el fútbol a otro nivel con personajes del
+      Reino Champiñón, poderes especiales y partidos llenos de acción.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/mario-strikers.jpg" class="hero-img" alt="Super Mario Strikers">
+  <div class="hero-info">
+    <h2>Super Mario Strikers</h2>
+
+    <div class="badges">
+      <span class="badge">Deporte</span>
+      <span class="badge">Fútbol</span>
+      <span class="badge">Acción</span>
+      <span class="badge">Multijugador</span>
+    </div>
+
+    <p class="short-desc">
+      Disfruta de partidos intensos, utiliza poderes especiales y domina
+      el campo con tus personajes favoritos de Mario.
+    </p>
+
+    <h3 class="price">$6</h3>
+
+    <button class="buy" onclick="addToCart('Super Mario Strikers', 6)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Super Mario Strikers combina fútbol con acción arcade y
+        poderes especiales únicos de cada personaje del Reino Champiñón.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Partidos rápidos</li>
+        <li>Torneos</li>
+        <li>Multijugador local competitivo</li>
+        <li>Desafíos y minijuegos especiales</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Jugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Control ágil de los personajes</li>
+        <li>Poderes especiales y objetos en el campo</li>
+        <li>Golpeo estratégico del balón</li>
+        <li>Defensas y ataques dinámicos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Escenarios coloridos y dinámicos</li>
+        <li>Animaciones fluidas de personajes</li>
+        <li>Música alegre y efectos divertidos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Partidos rápidos: 10–15 minutos cada uno</li>
+        <li>Torneos completos: 5–10 horas</li>
+        <li>Alta rejugabilidad con multijugador local</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>GameCube</li>
+        <li>Consolas compatibles con emuladores</li>
+      </ul>
+      <p>
+        Compatible con su generación de consolas y emuladores modernos.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

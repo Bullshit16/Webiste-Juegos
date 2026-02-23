@@ -2,54 +2,150 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Zelda | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <title>Zelda: Breath of the Wild | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-<section class="banner">
-  <video autoplay loop muted class="banner-video" src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🗡 Explora Hyrule</h2>
+    <p>
+      Sumérgete en un mundo abierto lleno de aventuras, acertijos,
+      enemigos y secretos en Zelda: Breath of the Wild.
+    </p>
+  </div>
 </section>
 
-<section class="game-detail">
-  <img src="../images/zelda-breath-of-the-wild_r19a.1920.webp" class="game-img" alt="Zelda">
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/zelda-breath-of-the-wild_r19a.1920.webp" class="hero-img" alt="Zelda: Breath of the Wild">
+  <div class="hero-info">
+    <h2>Zelda: Breath of the Wild</h2>
 
-  <div class="info">
-    <h2>Zelda</h2>
     <div class="badges">
       <span class="badge">Aventura</span>
       <span class="badge">Acción</span>
       <span class="badge">Exploración</span>
+      <span class="badge">Open World</span>
     </div>
 
-    <p class="description">
-      Zelda: Breath of the Wild es un juego de acción y aventura donde
-      exploras un mundo abierto, resuelves acertijos y derrotas enemigos
-      para salvar Hyrule.
+    <p class="short-desc">
+      Explora un mundo abierto masivo, resuelve acertijos, enfréntate a enemigos
+      desafiantes y descubre secretos ocultos mientras ayudas a Link a salvar Hyrule.
     </p>
 
-    <ul class="features">
-      <li>✔ Mundo abierto</li>
-      <li>✔ Puzzles y acertijos</li>
-      <li>✔ Combate estratégico</li>
-      <li>✔ Explora y descubre secretos</li>
-    </ul>
+    <h3 class="price">$25</h3>
 
-    <h3>$25</h3>
-
-    <button class="buy" onclick="addToCart('Zelda', 25)">
-      🛒 Agregar al carrito
+    <button class="buy" onclick="addToCart('Zelda: Breath of the Wild', 25)">
+      🛒 Comprar Ahora
     </button>
   </div>
 </section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Zelda: Breath of the Wild reinventa la saga con un vasto mundo abierto,
+        mecánicas de exploración innovadoras y libertad total para abordar
+        desafíos de múltiples formas.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Historia principal: Rescata a Hyrule y derrota a Calamity Ganon</li>
+        <li>Exploración libre: Descubre secretos, santuarios y misiones secundarias</li>
+        <li>Desafíos y coleccionables: Criaturas, armas y equipo especial</li>
+        <li>Opciones de dificultad ajustables</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Jugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Exploración libre en un mundo abierto</li>
+        <li>Combate estratégico con armas, arcos y magia</li>
+        <li>Interacción con el entorno y física avanzada</li>
+        <li>Supervivencia: alimentos, clima y resistencia</li>
+        <li>Resolución de acertijos en santuarios y templos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Estilo artístico detallado y colores vibrantes</li>
+        <li>Animaciones fluidas y efectos visuales impresionantes</li>
+        <li>Banda sonora épica y envolvente</li>
+        <li>Efectos ambientales dinámicos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Historia principal: 50–60 horas</li>
+        <li>Exploración y santuarios: +100 horas</li>
+        <li>Misiones secundarias y coleccionables: infinitas combinaciones</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Nintendo Switch</li>
+        <li>Wii U</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 
 <script src="juegos.js"></script>
 </body>

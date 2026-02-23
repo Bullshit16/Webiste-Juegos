@@ -2,63 +2,155 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Fornite | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <title>Fortnite | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
-<!-- HEADER IGUAL A INDEX1 -->
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-
 <!-- BANNER -->
-<section class="banner">
-    <video autoplay loop muted class="banner-video" 
-    src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🔥 Battle Royale Global</h2>
+    <p>
+      Construye, combate y sobrevive en uno de los juegos
+      multijugador más populares del mundo.
+    </p>
+  </div>
 </section>
 
-<!-- DETALLE DEL JUEGO -->
-<section class="game-detail">
+<!-- HERO -->
+<section class="hero">
+  <img src="../images/g4.jpg" 
+       class="hero-img" 
+       alt="Fortnite">
 
-  <img src="../images/g4.jpg" class="game-img" alt="Fornite">
-
-  <div class="info">
-    <h2>Fornite</h2>
+  <div class="hero-info">
+    <h2>Fortnite</h2>
 
     <div class="badges">
       <span class="badge">Acción</span>
-      <span class="badge">Guerra</span>
+      <span class="badge">Battle Royale</span>
       <span class="badge">Multiplayer</span>
+      <span class="badge">Shooter</span>
     </div>
 
-    <p class="description">
-      Fortnite es un videojuego de acción y supervivencia donde 100 jugadores
-      compiten en un mapa dinámico. Construye estructuras, combate enemigos
-      y sobrevive hasta el final.
+    <p class="short-desc">
+      Lanzado en 2017 por Epic Games, Fortnite popularizó
+      el género Battle Royale combinando disparos en tercera
+      persona con construcción en tiempo real y eventos
+      en vivo dentro del juego.
     </p>
 
-    <ul class="features">
-      <li>✔ Multijugador online</li>
-      <li>✔ Construcción en tiempo real</li>
-      <li>✔ Eventos en vivo</li>
-      <li>✔ Actualizaciones constantes</li>
-    </ul>
+    <h3 class="price">$50</h3>
 
-    <h3>$50</h3>
-
-    <button class="buy" onclick="addToCart('Fornite', 50)">
-      🛒 Agregar al carrito
+    <button class="buy" onclick="addToCart('Fortnite', 50)">
+      🛒 Comprar Ahora
     </button>
+  </div>
+</section>
+
+<!-- 6 TARJETAS -->
+<section class="info-grid">
+
+  <!-- 1 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🌍 Modo Battle Royale
+    </div>
+    <div class="card-content">
+      <p>
+        100 jugadores caen en una isla y deben luchar
+        hasta que solo uno quede en pie. El mapa se
+        reduce progresivamente obligando al combate.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🏗 Sistema de Construcción
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Construcción de paredes, rampas y techos</li>
+        <li>Estrategias defensivas y ofensivas</li>
+        <li>Combate dinámico en vertical</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎉 Eventos en Vivo
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Conciertos virtuales dentro del juego</li>
+        <li>Eventos narrativos por temporadas</li>
+        <li>Cambios constantes en el mapa</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos Disponibles
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Battle Royale</li>
+        <li>Modo Creativo</li>
+        <li>Salvar el Mundo (PvE)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🌐 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>PC</li>
+        <li>PlayStation</li>
+        <li>Xbox</li>
+        <li>Nintendo Switch</li>
+        <li>Dispositivos móviles</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Requisitos Básicos (PC)
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Windows 10/11</li>
+        <li>8GB RAM recomendado</li>
+        <li>GPU compatible con DirectX 11</li>
+        <li>30GB espacio libre</li>
+      </ul>
+    </div>
   </div>
 
 </section>
 
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 <script src="juegos.js"></script>
 </body>
 </html>

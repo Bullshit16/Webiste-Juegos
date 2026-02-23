@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Super Mario Sunshine | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>☀ Aventuras en Isla Delfino</h2>
+    <p>
+      Acompaña a Mario mientras utiliza el dispositivo FLUDD
+      para limpiar la isla y enfrentarse a desafíos únicos
+      en esta colorida aventura.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/mario-sunshine.jpg" class="hero-img" alt="Super Mario Sunshine">
+  <div class="hero-info">
+    <h2>Super Mario Sunshine</h2>
+
+    <div class="badges">
+      <span class="badge">Aventura</span>
+      <span class="badge">Plataformas</span>
+      <span class="badge">Acción</span>
+      <span class="badge">Nintendo</span>
+    </div>
+
+    <p class="short-desc">
+      Explora Isla Delfino, limpia la isla con FLUDD y
+      resuelve los misterios que amenazan el paraíso de Mario.
+    </p>
+
+    <h3 class="price">$6</h3>
+
+    <button class="buy" onclick="addToCart('Super Mario Sunshine', 6)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Super Mario Sunshine es una aventura en 3D donde Mario
+        limpia la isla y enfrenta desafíos usando su nuevo dispositivo FLUDD.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Historia principal: Rescata Isla Delfino</li>
+        <li>Recogida de Shine Sprites</li>
+        <li>Exploración libre de la isla</li>
+        <li>Mini-juegos y desafíos secretos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Jugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Movimiento y saltos en 3D</li>
+        <li>Uso del FLUDD para limpiar y atacar</li>
+        <li>Resolución de puzzles ambientales</li>
+        <li>Desbloqueo de niveles y Shine Sprites</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Islas coloridas y detalladas</li>
+        <li>Música alegre y efectos ambientales</li>
+        <li>Animaciones fluidas de Mario y personajes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Historia principal: 15–20 horas</li>
+        <li>Recolectar todos los Shine Sprites: +10 horas</li>
+        <li>Alta rejugabilidad con exploración y desafíos secretos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>GameCube</li>
+        <li>Wii (Virtual Console)</li>
+        <li>Compatible con emuladores modernos</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

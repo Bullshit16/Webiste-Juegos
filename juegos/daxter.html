@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Daxter | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🦦 La Aventura Más Divertida</h2>
+    <p>
+      Acompaña a Daxter en su misión en solitario,
+      llena de humor, acción y desafíos de plataformas.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/dexter.jpg" class="hero-img" alt="Daxter">
+
+  <div class="hero-info">
+    <h2>Daxter</h2>
+
+    <div class="badges">
+      <span class="badge">Acción</span>
+      <span class="badge">Aventura</span>
+      <span class="badge">Plataformas</span>
+      <span class="badge">Arcade</span>
+      <span class="badge">Clásico</span>
+    </div>
+
+    <p class="short-desc">
+      Vive la historia paralela de Daxter mientras intenta
+      rescatar a Jak. Explora escenarios dinámicos,
+      derrota enemigos y supera obstáculos en esta
+      aventura llena de carisma y diversión.
+    </p>
+
+    <h3 class="price">$5</h3>
+
+    <button class="buy" onclick="addToCart('Daxter', 5)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- DESCRIPCIÓN EXTENDIDA -->
+<section class="info-grid">
+
+  <!-- HISTORIA -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Historia y Ambientación
+    </div>
+    <div class="card-content">
+      <p>
+        La historia se desarrolla durante los eventos
+        en los que Jak está prisionero. Daxter decide
+        convertirse en héroe y emprender su propia misión
+        para rescatar a su mejor amigo.
+      </p>
+      <p>
+        A lo largo del juego descubrirás su lado más
+        valiente mientras mantiene su característico
+        humor sarcástico.
+      </p>
+    </div>
+  </div>
+
+  <!-- JUGABILIDAD -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Sistema de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Plataformas dinámicas en 3D</li>
+        <li>Combate cuerpo a cuerpo</li>
+        <li>Uso de gadgets especiales</li>
+        <li>Misiones variadas</li>
+        <li>Jefes finales desafiantes</li>
+      </ul>
+      <p>
+        La combinación de combate y exploración
+        mantiene la experiencia fresca y entretenida.
+      </p>
+    </div>
+  </div>
+
+  <!-- HABILIDADES -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🧰 Habilidades y Herramientas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Rociador eléctrico anti-insectos</li>
+        <li>Jetpack temporal</li>
+        <li>Ataques giratorios</li>
+        <li>Mejoras desbloqueables</li>
+        <li>Movimientos ágiles y rápidos</li>
+      </ul>
+      <p>
+        Usa las herramientas adecuadas para derrotar
+        enemigos y avanzar en cada nivel.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🏆 Contenido y Extras
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Modo Historia completo</li>
+        <li>Mini-juegos especiales</li>
+        <li>Desbloqueables secretos</li>
+        <li>Coleccionables ocultos</li>
+        <li>Escenarios variados</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONSEJOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🧠 Consejos para Jugadores
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Explora cada rincón del mapa</li>
+        <li>Mejora tus herramientas constantemente</li>
+        <li>Observa patrones de jefes finales</li>
+        <li>No ignores objetos coleccionables</li>
+        <li>Aprovecha habilidades aéreas</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- REQUISITOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Requisitos del Sistema
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Emulador compatible PSP</li>
+        <li>1GB RAM mínimo</li>
+        <li>1GB espacio libre</li>
+        <li>Windows / Mac / Android</li>
+      </ul>
+      <p>
+        Compatible con mando para mejor experiencia.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+</body>
+</html>

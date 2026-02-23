@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Jupiter | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🌌 Edición Especial Fan-Game</h2>
+    <p>
+      Pokémon Jupiter ofrece nuevas criaturas, mapas personalizados,
+      entrenadores exclusivos y una historia completamente original.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/pokemon-jupiter.jpg" class="hero-img" alt="Pokemon Jupiter">
+  <div class="hero-info">
+    <h2>Pokemon Jupiter</h2>
+
+    <div class="badges">
+      <span class="badge">RPG</span>
+      <span class="badge">Fan Edition</span>
+      <span class="badge">Aventura</span>
+      <span class="badge">Desafío</span>
+    </div>
+
+    <p class="short-desc">
+      Una aventura fan-made con nuevos Pokémon, mapas
+      personalizados y retos pensados para entrenadores
+      expertos que buscan algo distinto.
+    </p>
+
+    <h3 class="price">$6</h3>
+
+    <button class="buy" onclick="addToCart('Pokemon Jupiter', 6)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Pokémon Jupiter es una edición fan-made que expande la experiencia
+        clásica de Pokémon con criaturas nuevas, historias personalizadas
+        y un diseño de mapas propio.
+      </p>
+      <p>
+        Ideal para entrenadores que desean un desafío único y diferente
+        al de los juegos originales.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal con historia original</li>
+        <li>Exploración de mapas personalizados</li>
+        <li>Batallas contra entrenadores exclusivos</li>
+        <li>Eventos especiales y desafíos avanzados</li>
+      </ul>
+      <p>
+        Combina exploración, combates estratégicos
+        y coleccionismo de nuevas criaturas.
+      </p>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema clásico por turnos</li>
+        <li>IA mejorada de entrenadores</li>
+        <li>Movimientos y habilidades reequilibradas</li>
+        <li>Mayor dificultad en combates avanzados</li>
+      </ul>
+      <p>
+        Cada batalla requiere estrategia, selección de equipo
+        y buen uso de habilidades para superar los retos.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sprites originales y nuevos diseños</li>
+        <li>Mapas y entornos personalizados</li>
+        <li>Música adaptada y efectos de batalla</li>
+      </ul>
+      <p>
+        Experiencia visual y sonora adaptada al fan-game,
+        ofreciendo inmersión total.
+      </p>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal: ~35 horas</li>
+        <li>Exploración completa: +15 horas</li>
+        <li>Eventos y desafíos especiales</li>
+      </ul>
+      <p>
+        🎯 Alta rejugabilidad gracias a nuevos Pokémon,
+        mapas y combates desafiantes.
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Game Boy Advance (GBA)</li>
+        <li>Emuladores compatibles: Windows, Mac, Android</li>
+      </ul>
+      <p>
+        Disponible para jugar en consolas originales y
+        emulaciones modernas.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

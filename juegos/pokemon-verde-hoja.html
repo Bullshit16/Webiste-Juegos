@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Verde Hoja | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🍃 Remake Clásico de Kanto</h2>
+    <p>
+      Pokémon Verde Hoja revive la aventura original de Kanto,
+      con gráficos mejorados, historia ampliada y todos los
+      Pokémon originales de la primera generación.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/pokemon-verde-hoja.jpg" class="hero-img" alt="Pokemon Verde Hoja">
+  <div class="hero-info">
+    <h2>Pokemon Verde Hoja</h2>
+
+    <div class="badges">
+      <span class="badge">RPG</span>
+      <span class="badge">Aventura</span>
+      <span class="badge">Clásico</span>
+      <span class="badge">GBA</span>
+    </div>
+
+    <p class="short-desc">
+      Explora Kanto, captura los 151 Pokémon originales,
+      enfrenta a líderes de gimnasio y conviértete en Campeón
+      de la Liga Pokémon en esta clásica aventura.
+    </p>
+
+    <h3 class="price">$4</h3>
+
+    <button class="buy" onclick="addToCart('Pokemon Verde Hoja', 4)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Pokémon Verde Hoja es el remake del clásico juego de Kanto,
+        ofreciendo la experiencia original con mejoras gráficas
+        y mecánicas optimizadas para GBA.
+      </p>
+      <p>
+        Ideal para jugadores que quieren revivir la primera generación
+        de Pokémon con un toque moderno.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal por Kanto</li>
+        <li>Captura de los 151 Pokémon originales</li>
+        <li>Intercambio y compatibilidad entre versiones</li>
+        <li>Exploración de rutas y cuevas</li>
+        <li>Batallas con líderes de gimnasio y Elite Four</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema clásico de combates por turnos</li>
+        <li>Estrategia de tipos elemental</li>
+        <li>Mejoras en habilidades y objetos</li>
+        <li>Entrenadores con IA optimizada</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sprites y entornos mejorados para GBA</li>
+        <li>Música clásica con efectos optimizados</li>
+        <li>Animaciones de ataques más fluidas</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal: ~30-35 horas</li>
+        <li>Captura y colección de todos los Pokémon: +20 horas</li>
+        <li>Exploración de Kanto y eventos opcionales</li>
+      </ul>
+      <p>
+        🎯 Alta rejugabilidad con intercambios, legendarios
+        y desafíos adicionales.
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Game Boy Advance (GBA)</li>
+        <li>Emuladores compatibles: Windows, Mac, Android</li>
+      </ul>
+      <p>
+        Compatible con consolas originales y emuladores modernos.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

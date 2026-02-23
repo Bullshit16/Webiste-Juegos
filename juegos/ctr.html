@@ -3,52 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <title>CTR | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-<section class="banner">
-  <video autoplay loop muted class="banner-video" src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🏎 Velocidad y Diversión Extrema</h2>
+    <p>
+      Compite con tus personajes favoritos en pistas
+      llenas de trampas, potenciadores y desafíos únicos.
+    </p>
+  </div>
 </section>
 
-<section class="game-detail">
-  <img src="../images/g5.jpg" class="game-img" alt="CTR">
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/g5.jpg" class="hero-img" alt="CTR">
 
-  <div class="info">
-    <h2>CTR</h2>
+  <div class="hero-info">
+    <h2>CTR (Crash Team Racing)</h2>
+
     <div class="badges">
-      <span class="badge">Deporte</span>
       <span class="badge">Carreras</span>
-      <span class="badge">Multiplayer</span>
+      <span class="badge">Arcade</span>
+      <span class="badge">Multijugador</span>
+      <span class="badge">Competitivo</span>
+      <span class="badge">Diversión</span>
     </div>
 
-    <p class="description">
-      Crash Team Racing (CTR) es un juego de carreras divertido y rápido
-      donde compites en pistas llenas de obstáculos y potenciadores.
+    <p class="short-desc">
+      Crash Team Racing es un juego de carreras estilo arcade
+      donde competirás en circuitos dinámicos utilizando
+      potenciadores, derrapes estratégicos y habilidades únicas.
     </p>
 
-    <ul class="features">
-      <li>✔ Carreras multijugador</li>
-      <li>✔ Vehículos personalizables</li>
-      <li>✔ Pistas llenas de sorpresas</li>
-      <li>✔ Eventos especiales</li>
-    </ul>
-
-    <h3>$20</h3>
+    <h3 class="price">$20</h3>
 
     <button class="buy" onclick="addToCart('CTR', 20)">
-      🛒 Agregar al carrito
+      🛒 Comprar Ahora
     </button>
   </div>
 </section>
+
+<!-- DESCRIPCIÓN EXTENDIDA -->
+<section class="info-grid">
+
+  <!-- HISTORIA -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Modo Aventura
+    </div>
+    <div class="card-content">
+      <p>
+        En el modo aventura competirás contra Nitros Oxide
+        y otros rivales en distintos mundos temáticos.
+        Deberás ganar trofeos y superar desafíos especiales
+        para avanzar.
+      </p>
+      <p>
+        Cada pista tiene secretos, atajos y pruebas contrarreloj
+        que pondrán a prueba tus habilidades al volante.
+      </p>
+    </div>
+  </div>
+
+  <!-- JUGABILIDAD -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Sistema de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Derrape con turbo avanzado</li>
+        <li>Potenciadores ofensivos y defensivos</li>
+        <li>Saltos y atajos estratégicos</li>
+        <li>IA competitiva</li>
+        <li>Física arcade rápida y dinámica</li>
+      </ul>
+      <p>
+        Dominar el derrape y el uso correcto de objetos
+        es clave para ganar carreras.
+      </p>
+    </div>
+  </div>
+
+  <!-- PERSONAJES -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎭 Personajes y Vehículos
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Crash Bandicoot</li>
+        <li>Coco Bandicoot</li>
+        <li>Dr. Neo Cortex</li>
+        <li>Tiny Tiger</li>
+        <li>Personajes desbloqueables</li>
+      </ul>
+      <p>
+        Cada personaje tiene estadísticas diferentes
+        que afectan velocidad, aceleración y control.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🏆 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Modo Aventura</li>
+        <li>Carreras individuales</li>
+        <li>Contrarreloj</li>
+        <li>Batalla en arena</li>
+        <li>Multijugador local</li>
+      </ul>
+      <p>
+        Ideal para jugar con amigos en pantalla dividida
+        y competir por el primer lugar.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONSEJOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🧠 Consejos para Ganar
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Practica el derrape turbo</li>
+        <li>Memoriza atajos en cada pista</li>
+        <li>Guarda potenciadores para momentos clave</li>
+        <li>Elige personaje según tu estilo</li>
+        <li>Usa escudos estratégicamente</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- REQUISITOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Requisitos del Sistema
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Emulador compatible PS1 / PS2</li>
+        <li>1GB RAM mínimo</li>
+        <li>700MB espacio libre</li>
+        <li>Windows / Mac / Android</li>
+      </ul>
+      <p>
+        Compatible con mando para una experiencia
+        más precisa y divertida.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 
 <script src="juegos.js"></script>
 </body>

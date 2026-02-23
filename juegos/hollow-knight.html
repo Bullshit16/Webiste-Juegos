@@ -2,63 +2,165 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hollow Knight | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <a href="../index1.html" class="back-btn">⬅ Volver</a>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
 <!-- BANNER -->
-<section class="banner">
-    <video autoplay loop muted class="banner-video" 
-    src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🖤 Desciende a Hallownest</h2>
+    <p>
+      Explora un reino olvidado lleno de secretos, criaturas
+      antiguas y desafíos que pondrán a prueba tu habilidad.
+    </p>
+  </div>
 </section>
 
-<!-- DETALLE DEL JUEGO -->
-<section class="game-detail">
+<!-- HERO -->
+<section class="hero">
+  <img src="../images/hollow-knight.jpg" 
+       class="hero-img" 
+       alt="Hollow Knight">
 
-  <img src="../images/hollow-knight.jpg" class="game-img" alt="Hollow Knight">
-
-  <div class="info">
+  <div class="hero-info">
     <h2>Hollow Knight</h2>
 
     <div class="badges">
-      <span class="badge">Aventura</span>
       <span class="badge">Acción</span>
+      <span class="badge">Aventura</span>
       <span class="badge">Metroidvania</span>
+      <span class="badge">Indie</span>
     </div>
 
-    <p class="description">
-      Hollow Knight es un juego de acción y aventura en un mundo subterráneo
-      lleno de insectos y criaturas extrañas. Explora, combate y descubre secretos
-      ocultos en Hallownest.
+    <p class="short-desc">
+      Lanzado en 2017, Hollow Knight es un metroidvania
+      desarrollado por Team Cherry que combina exploración
+      profunda, combate desafiante y una narrativa ambiental
+      enigmática. Adéntrate en el reino subterráneo de Hallownest
+      y descubre su trágico pasado.
     </p>
 
-    <ul class="features">
-      <li>✔ Mundo enorme para explorar</li>
-      <li>✔ Combate desafiante</li>
-      <li>✔ Jefes épicos</li>
-      <li>✔ Banda sonora atmosférica</li>
-    </ul>
-
-    <h3>$15</h3>
+    <h3 class="price">$15</h3>
 
     <button class="buy" onclick="addToCart('Hollow Knight', 15)">
-      🛒 Agregar al carrito
+      🛒 Comprar Ahora
     </button>
+  </div>
+</section>
+
+<!-- 6 TARJETAS -->
+<section class="info-grid">
+
+  <!-- 1 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Historia
+    </div>
+    <div class="card-content">
+      <p>
+        En el reino abandonado de Hallownest, una misteriosa
+        infección ha consumido a sus habitantes. Controlas
+        a un silencioso caballero que explora ruinas antiguas,
+        ciudades olvidadas y templos sellados para descubrir
+        la verdad detrás del Rey Pálido y el Vacío.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚔️ Sistema de Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Combate preciso basado en reflejos</li>
+        <li>Ataque principal con el aguijón (Nail)</li>
+        <li>Magias conocidas como hechizos del Alma</li>
+        <li>Más de 40 amuletos que modifican habilidades</li>
+        <li>Sistema de mejora progresiva del personaje</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🌍 Exploración
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Mundo interconectado estilo metroidvania</li>
+        <li>Zonas únicas como Ciudad de Lágrimas</li>
+        <li>Habilidades desbloqueables para nuevas áreas</li>
+        <li>Mapas comprables y secretos ocultos</li>
+        <li>Rutas opcionales y múltiples finales</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      👑 Jefes y Desafío
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Más de 30 jefes únicos</li>
+        <li>Combates opcionales extremadamente difíciles</li>
+        <li>Contenido adicional gratuito (DLCs integrados)</li>
+        <li>Modo desafío en el Coliseo de los Insensatos</li>
+        <li>Enfrentamientos memorables como el Hollow Knight</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Estilo y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Arte dibujado a mano en 2D</li>
+        <li>Animaciones fluidas y detalladas</li>
+        <li>Banda sonora atmosférica compuesta por Christopher Larkin</li>
+        <li>Ambientación oscura y melancólica</li>
+        <li>Narrativa ambiental sin diálogos extensos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>PC (Windows, macOS, Linux)</li>
+        <li>Nintendo Switch</li>
+        <li>PlayStation 4</li>
+        <li>Xbox One</li>
+        <li>Disponible en formato digital</li>
+      </ul>
+    </div>
   </div>
 
 </section>
 
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 <script src="juegos.js"></script>
 </body>
 </html>

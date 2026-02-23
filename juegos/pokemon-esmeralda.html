@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Esmeralda | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🌿 Explora Hoenn en Profundidad</h2>
+    <p>
+      Pokémon Esmeralda mejora Rubí y Zafiro, incorporando
+      el Frente de Batalla, villanos dobles y un postgame
+      avanzado para los entrenadores más dedicados.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/pokemon-esmeralda.jpg" class="hero-img" alt="Pokemon Esmeralda">
+  <div class="hero-info">
+    <h2>Pokemon Esmeralda</h2>
+
+    <div class="badges">
+      <span class="badge">RPG</span>
+      <span class="badge">Aventura</span>
+      <span class="badge">Hoenn</span>
+      <span class="badge">Postgame</span>
+    </div>
+
+    <p class="short-desc">
+      Explora la región Hoenn, enfréntate a los equipos Aqua y Magma,
+      disfruta del Frente de Batalla y descubre la historia expandida
+      de esta edición clásica.
+    </p>
+
+    <h3 class="price">$4</h3>
+
+    <button class="buy" onclick="addToCart('Pokemon Esmeralda', 4)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Pokémon Esmeralda combina elementos de Rubí y Zafiro,
+        ofreciendo historia ampliada, nuevas animaciones y desafíos
+        únicos como el Frente de Batalla y el postgame avanzado.
+      </p>
+      <p>
+        Los equipos Aqua y Magma actúan como villanos dobles,
+        creando una narrativa más rica y estratégica.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal con historia expandida</li>
+        <li>Frente de Batalla (desafíos de combate avanzados)</li>
+        <li>Captura de más de 200 Pokémon</li>
+        <li>Exploración de Hoenn con secretos y rutas alternativas</li>
+      </ul>
+      <p>
+        Ideal para jugadores que buscan completar toda la región
+        y dominar todas las mecánicas.
+      </p>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema clásico por turnos</li>
+        <li>Estrategia de tipos elemental</li>
+        <li>Mejoras en IA de entrenadores</li>
+        <li>Eventos especiales y postgame avanzado</li>
+      </ul>
+      <p>
+        Cada combate requiere planificación, balance de equipo
+        y uso estratégico de movimientos y objetos.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Colores y sprites mejorados respecto a Rubí/Zafiro</li>
+        <li>Música de Hoenn ampliada y efectos de combate</li>
+        <li>Animaciones de ataques y Pokémon dinámicas</li>
+      </ul>
+      <p>
+        Experiencia visual y auditiva más envolvente que las versiones anteriores.
+      </p>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Historia principal: ~40 horas</li>
+        <li>Frente de Batalla y postgame: +20 horas</li>
+        <li>Exploración completa y coleccionables</li>
+      </ul>
+      <p>
+        🎯 Alta rejugabilidad gracias a desafíos opcionales
+        y mecánicas de captura y entrenamiento avanzadas.
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Game Boy Advance (GBA)</li>
+        <li>Emuladores compatibles: Windows, Mac, Android</li>
+      </ul>
+      <p>
+        Funciona en consolas originales y emulaciones modernas
+        para jugar en PC o dispositivos móviles.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Fire Emblem (2003) | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🔥 El Comienzo de la Saga en Occidente</h2>
+    <p>
+      Estrategia pura por turnos donde cada movimiento
+      puede significar la victoria… o la pérdida permanente.
+    </p>
+  </div>
+</section>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="../images/fire-emblem.jpg" 
+       class="hero-img" 
+       alt="Fire Emblem 2003 GBA">
+
+  <div class="hero-info">
+    <h2>Fire Emblem (2003)</h2>
+
+    <div class="badges">
+      <span class="badge">RPG</span>
+      <span class="badge">Estrategia</span>
+      <span class="badge">Táctico</span>
+      <span class="badge">Clásico GBA</span>
+    </div>
+
+    <p class="short-desc">
+      Lanzado en 2003 para Game Boy Advance, fue la primera
+      entrega de la saga publicada fuera de Japón.
+      Presenta una historia centrada en Lyn, Eliwood y Hector,
+      combinando narrativa profunda con combate táctico.
+    </p>
+
+    <h3 class="price">$6</h3>
+
+    <button class="buy" onclick="addToCart('Fire Emblem', 6)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- 6 TARJETAS -->
+<section class="info-grid">
+
+  <!-- 1 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Historia
+    </div>
+    <div class="card-content">
+      <p>
+        La historia se divide en tres rutas principales,
+        comenzando con Lyn y expandiéndose con Eliwood
+        y Hector en una conspiración que amenaza el continente de Elibe.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚔️ Sistema de Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Combate táctico por turnos en cuadrícula</li>
+        <li>Triángulo de armas (espadas, lanzas, hachas)</li>
+        <li>Experiencia individual por unidad</li>
+        <li>Muerte permanente de personajes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🏹 Sistema de Clases
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Caballeros, magos, arqueros y más</li>
+        <li>Promoción avanzada con objetos especiales</li>
+        <li>Habilidades únicas según clase</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🌍 Características Destacadas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Más de 30 personajes jugables</li>
+        <li>Animaciones de combate detalladas</li>
+        <li>Historia extensa dividida en capítulos</li>
+        <li>Sistema de soporte entre personajes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Historia de Lyn (tutorial expandido)</li>
+        <li>Historia de Eliwood</li>
+        <li>Modo Hector (desbloqueable)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Requisitos
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Game Boy Advance o emulador compatible</li>
+        <li>256MB RAM mínimo</li>
+        <li>16MB espacio libre</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+</body>
+</html>

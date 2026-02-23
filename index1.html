@@ -5,36 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameZone Store</title>
     <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="game-pro.css">
+    
 </head>
-
 
 
 <body>
 
+<div id="toast" class="toast">✅ Agregado al carrito</div>
 <!-- HEADER CON MENÚ -->
 <header class="header">
     <div class="logo">
         <h1>🎮 GameZone</h1>
     </div>
 
-    <!-- Menú de navegación -->
-    <nav class="nav">
-    <ul class="nav-links">
-    <li><a href="index.html"></a></li>
-    <li><a href="juegos.html"></a></li>
-    <li><a href="contacto.html"></a></li>
+    
 
-        </ul>
-    </nav>
+
 
     <!-- Botón carrito -->
-    <button class="cart-btn" onclick="toggleCart()">
+    <button class="cart-btn" id="openCart">
         🛒 Carrito (<span id="cart-count">0</span>)
     </button>
 
-    <!-- Botón menú móvil -->
-   
+
 </header>
+<!-- BOTONES FLOTANTES -->
+<a href="index.html" class="floating-home">
+  ⬅
+</a>
 
 
 <!-- BANNER -->
@@ -48,7 +47,9 @@
         <p>Videojuegos que te llevan a otro nivel
         Compra fácil, rápido y seguro</p>
     </div>
+    
 </section>
+
 
 <section class="filters">
     <input 
@@ -101,23 +102,30 @@
     </div>
 </div>
 
+<!-- LAYOUT PRINCIPAL -->
+<div class="layout">
 
-<!-- PRODUCTOS -->
-<section class="products">
-    <h2>Catálogo</h2>
-
-        <div class="cards" id="gamesContainer"></div>
-</section>
-
-<!-- CARRITO -->
-<div class="cart" id="cart">
-    <h2>🛒 Carrito</h2>
-    <ul id="cart-items"></ul>
-    <h3>Total: $<span id="total">0</span></h3>
-    <button class="pay-btn" onclick="openPayment()">Pagar ahora</button>
     
-</div>
+  <!-- CONTENIDO PRINCIPAL -->
+  <main id="mainContent">
 
+    <section class="products">
+        <h2>Catálogo</h2>
+        <div class="cards" id="gamesContainer"></div>
+    </section>
+
+  </main>
+
+  <!-- CARRITO SIDEBAR -->
+  <aside class="cart" id="cartSidebar">
+      <button id="closeCart">✖</button>
+      <h2>🛒 Carrito</h2>
+      <ul id="cart-items"></ul>
+      <h3>Total: $<span id="total">0</span></h3>
+      <button class="pay-btn" onclick="openPayment()">Pagar ahora</button>
+  </aside>
+
+</div>
 
 <div class="payment" id="payment">
     <div class="payment-box">
@@ -151,42 +159,31 @@
     </div>
 </div>
 
-<footer class="footer">
-  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
-  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
-  <p>Gerente: gamezone@ejemplo.com</p>
-</footer>
-
-<!-- MODAL FACTURA -->
-<div class="invoice-modal" id="invoiceModal">
-  <div class="invoice-box">
-    <h2>🧾 Factura de compra</h2>
-
-    <div id="invoiceContent"></div>
-
-    <div class="invoice-actions">
-      <button onclick="downloadPDF()">📄 Imprimir</button>
-      <button class="cancel" onclick="closeInvoice()">Cerrar</button>
-    </div>
-  </div>
-</div>
-<div class="download-modal" id="downloadModal">
-  <div class="download-box">
-    <h2>🎮 Descargar juegos</h2>
-    <p>¿Deseas descargar tus juegos ahora?</p>
-
-    <div id="downloadList"></div>
-
-    <div class="download-actions">
-      <button onclick="closeDownloadModal()">Cerrar</button>
-    </div>
-  </div>
-</div>
-
-<!-- jsPDF -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 
 <script src="main.js"></script>
+
+
+<!-- MODAL FACTURA -->
+<div id="invoiceModal" class="invoice-modal">
+  <div class="invoice-content">
+    <h2>✅ Pago realizado con éxito</h2>
+
+    <div id="invoiceDetails"></div>
+
+    <div class="invoice-buttons">
+      <button onclick="printInvoice()">🖨 Imprimir / PDF</button>
+      <button onclick="closeInvoice()">Cerrar</button>
+    </div>
+  </div>
+
+
+
+  
+ 
+</div>
+
+
 </body>
+
 </html>

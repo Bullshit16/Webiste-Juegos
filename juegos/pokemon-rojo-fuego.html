@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Rojo Fuego | GameZone</title>
+  <link rel="stylesheet" href="game-pro.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
+</header>
+
+<!-- BANNER PROMOCIONAL -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>🔥 Remake Clásico de Kanto</h2>
+    <p>
+      Pokémon Rojo Fuego ofrece la aventura clásica de Kanto con mejoras gráficas,
+      nuevos desafíos, Pokémon legendarios y compatibilidad para intercambios.
+    </p>
+  </div>
+</section>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <img src="../images/pokemon-rojo-fuego.jpg" class="hero-img" alt="Pokemon Rojo Fuego">
+  <div class="hero-info">
+    <h2>Pokemon Rojo Fuego</h2>
+
+    <div class="badges">
+      <span class="badge">RPG</span>
+      <span class="badge">Aventura</span>
+      <span class="badge">Kanto</span>
+      <span class="badge">Remake</span>
+    </div>
+
+    <p class="short-desc">
+      Explora Kanto, captura Pokémon legendarios, enfrenta al Equipo Rocket
+      y disfruta de un sistema de combate mejorado en esta clásica aventura.
+    </p>
+
+    <h3 class="price">$4</h3>
+
+    <button class="buy" onclick="addToCart('Pokemon Rojo Fuego', 4)">
+      🛒 Comprar Ahora
+    </button>
+  </div>
+</section>
+
+<!-- INFO CARDS -->
+<section class="info-grid">
+
+  <!-- CONCEPTO -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Concepto del Juego
+    </div>
+    <div class="card-content">
+      <p>
+        Pokémon Rojo Fuego es el remake del clásico Pokémon Rojo, con gráficos
+        actualizados, historia ampliada y eventos mejorados en toda la región de Kanto.
+      </p>
+      <p>
+        Ideal para jugadores que quieren revivir la aventura clásica con mejoras
+        modernas y contenido adicional.
+      </p>
+    </div>
+  </div>
+
+  <!-- MODOS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎮 Modos de Juego
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal por Kanto</li>
+        <li>Exploración de Islas Sete</li>
+        <li>Captura de Pokémon legendarios</li>
+        <li>Batallas estratégicas por turnos</li>
+        <li>Intercambio y compatibilidad multijugador</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- MECÁNICAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⚙ Mecánicas y Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema clásico de combates por turnos</li>
+        <li>IA de entrenadores mejorada</li>
+        <li>Movimientos reequilibrados</li>
+        <li>Desafíos opcionales y batallas avanzadas</li>
+      </ul>
+      <p>
+        Requiere planificación de equipo, estrategia de tipos y buen uso de objetos.
+      </p>
+    </div>
+  </div>
+
+  <!-- PRESENTACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎨 Gráficos y Sonido
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Gráficos actualizados respecto al original</li>
+        <li>Animaciones de ataques y sprites mejoradas</li>
+        <li>Música clásica y efectos de batalla</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- DURACIÓN -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      ⏳ Duración y Rejugabilidad
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Aventura principal: ~40 horas</li>
+        <li>Eventos opcionales y capturas: +20 horas</li>
+        <li>Exploración de Islas Sete</li>
+      </ul>
+      <p>
+        🎯 Gran rejugabilidad gracias a Pokémon legendarios y desafíos adicionales.
+      </p>
+    </div>
+  </div>
+
+  <!-- PLATAFORMAS -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Game Boy Advance (GBA)</li>
+        <li>Emuladores compatibles: Windows, Mac, Android</li>
+      </ul>
+      <p>
+        Compatible con consolas originales y emulaciones modernas.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
+
+<script src="juegos.js"></script>
+
+</body>
+</html>

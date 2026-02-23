@@ -3,52 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <title>Gears of War | GameZone</title>
-  <link rel="stylesheet" href="juegos.css">
-  <link rel="stylesheet" href="../styles1.css">
+  <link rel="stylesheet" href="game-pro.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">
-    <h1>🎮 GameZone</h1>
-  </div>
-  <button class="back-btn" onclick="goBack()">⬅ Volver</button>
+  <h1>🎮 GameZone</h1>
+  <button onclick="window.location.href='../index1.html'">⬅ Volver</button>
 </header>
 
-<section class="banner">
-  <video autoplay loop muted class="banner-video" src="../images/WhatsApp Video 2026-01-18 at 9.43.08 AM.mp4"></video>
+<!-- BANNER -->
+<section class="promo-banner">
+  <div class="banner-content">
+    <h2>💥 Guerra Total en Sera</h2>
+    <p>
+      Cobertura táctica, combate brutal y una de las sagas
+      más icónicas de Xbox.
+    </p>
+  </div>
 </section>
 
-<section class="game-detail">
-  <img src="../images/l6.jpg" class="game-img" alt="Gears of War">
+<!-- HERO -->
+<section class="hero">
+  <img src="../images/l6.jpg" 
+       class="hero-img" 
+       alt="Gears of War">
 
-  <div class="info">
+  <div class="hero-info">
     <h2>Gears of War</h2>
+
     <div class="badges">
-      <span class="badge">Guerra</span>
+      <span class="badge">Shooter</span>
       <span class="badge">Acción</span>
+      <span class="badge">Tercera Persona</span>
       <span class="badge">Multiplayer</span>
     </div>
 
-    <p class="description">
-      Gears of War es un shooter táctico donde la estrategia y
-      el trabajo en equipo son clave para sobrevivir y derrotar al enemigo.
+    <p class="short-desc">
+      Lanzado en 2006 para Xbox 360, Gears of War revolucionó
+      los shooters en tercera persona con su sistema de cobertura
+      táctica y su intensa campaña contra la amenaza Locust.
     </p>
 
-    <ul class="features">
-      <li>✔ Campaña intensa</li>
-      <li>✔ Multiplayer online</li>
-      <li>✔ Armas poderosas</li>
-      <li>✔ Mapas estratégicos</li>
-    </ul>
-
-    <h3>$40</h3>
+    <h3 class="price">$40</h3>
 
     <button class="buy" onclick="addToCart('Gears of War', 40)">
-      🛒 Agregar al carrito
+      🛒 Comprar Ahora
     </button>
   </div>
 </section>
+
+<!-- 6 TARJETAS -->
+<section class="info-grid">
+
+  <!-- 1 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      📖 Historia
+    </div>
+    <div class="card-content">
+      <p>
+        En el planeta Sera, la humanidad lucha por sobrevivir
+        contra la Horda Locust. Marcus Fenix lidera el Escuadrón
+        Delta en una misión crucial para salvar lo que queda del mundo.
+      </p>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🎯 Sistema de Combate
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Sistema de cobertura táctica innovador</li>
+        <li>Combate en tercera persona</li>
+        <li>Armas icónicas como la Lancer con motosierra</li>
+        <li>Enfrentamientos intensos contra jefes</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🤝 Cooperativo
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Campaña completa en modo cooperativo</li>
+        <li>Juego local o en línea</li>
+        <li>Estrategia en equipo obligatoria</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🌐 Multijugador
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Modos competitivos online</li>
+        <li>Mapas diseñados estratégicamente</li>
+        <li>Combate táctico basado en equipos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      🏆 Características Destacadas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Gráficos avanzados para su generación</li>
+        <li>Ambientación oscura y cinematográfica</li>
+        <li>Banda sonora intensa</li>
+        <li>Historia dividida en actos</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="info-card">
+    <div class="card-header" onclick="toggleCard(this)">
+      💻 Plataformas
+    </div>
+    <div class="card-content">
+      <ul>
+        <li>Xbox 360</li>
+        <li>PC (versión posterior)</li>
+        <li>Retrocompatible en Xbox modernas</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p><strong>GameZone</strong> &copy; 2026 — Tu tienda gamer de confianza</p>
+  <p>Contacto: +505 8478 3673 | Jinotepe, Nicaragua</p>
+  <p>Gerente: gamezone@ejemplo.com</p>
+</footer>
 
 <script src="juegos.js"></script>
 </body>
